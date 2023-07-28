@@ -1,0 +1,259 @@
+ 
+      h1 {
+      position: absolute;
+      margin: 0;
+      font-size: 32px;
+      color: #fff;
+      z-index: 2;
+      }
+
+      h2 {
+      font-weight: 400;
+      margin-top: 20px;
+      }
+
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 20px;
+      }
+
+      form {
+      width: 100%;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      }
+
+      .banner {
+      position: relative;
+      height: 100px;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color:#f71b1b; 
+      }
+
+      .banner::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.4); 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+
+      input, select {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+
+
+      select {
+      width: 100%;
+      padding: 7px 0;
+      background: transparent;
+      }
+
+      .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder, a {
+     /* color: #095484;*/
+      }
+
+      .item input:hover, .item select:hover {
+      border: 1px solid transparent;
+      box-shadow: 0 0 1px 0 ;
+      /*color: #095484;*/
+      }
+
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+
+      input[type="date"]::-webkit-inner-spin-button {
+        display: none;
+      }
+
+      .item i, input[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      font-size: 20px;
+      color: #a9a9a9;
+      }
+
+      .item i {
+      right: 2%;
+      top: 30px;
+      z-index: 1;
+      }
+
+      [type="date"]::-webkit-calendar-picker-indicator {
+      right: 1%;
+      z-index: 2;
+      opacity: 0;
+      cursor: pointer;
+      }
+
+     
+
+      label.check {
+      position: relative;
+      display: inline-block;
+      margin: 5px 20px 10px 0;
+      cursor: pointer;
+      }
+
+      .question span {
+      margin-left: 30px;
+      }
+
+      span.required {
+      margin-left: 0;
+      color: red;
+      }
+
+      label.check:before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
+      border: 1px solid #095484;
+      }
+
+      input[type=checkbox]:checked + .check:before {
+      background: #095484;
+      }
+
+      label.check:after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 4px;
+      width: 8px;
+      height: 4px;
+      border: 3px solid #fff;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+      opacity: 0;
+      }
+
+      input[type=checkbox]:checked + label:after {
+      opacity: 1;
+      }
+
+      .btn-block {
+      
+      text-align: center;
+      margin-left: 1%;
+      float: left;
+      position:static;
+      margin-top:20px;
+
+      }
+
+     
+
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+
+      button:hover {
+      /*background: #0666a3;*/
+      }
+
+      @media (min-width: 568px) {
+      .name-item, .city-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+
+      .name-item input, .city-item input {
+      width: calc(50% - 20px);
+      }
+
+      .city-item select {
+      width: calc(50% - 8px);
+      }
+      }
+
+      #item-status{
+      width: 35%;
+      }
+
+      #myFile{
+            border-style: none;
+            border: none;
+      }
+     
+    p{
+      font-weight:500;
+    }
+      .custom1-file-input {
+            display: inline-block;
+            position: relative;
+            color: #533e00;
+        }
+        .custom1-file-input input {
+            visibility: hidden;
+            width: 100px;
+        }
+        .custom1-file-input:before {
+            content: 'Choose File';
+            display: block;
+            background:white;
+            border-color: gray;
+            border: 3px solid gray;
+            border-radius: 10px;
+            padding: 5px 0px;
+            outline: none;
+            white-space: nowrap;
+            cursor: pointer;
+            text-shadow: 1px 1px rgba(255,255,255,0.7);
+            font-weight: bold;
+            text-align: center;
+            font-size: 10pt;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+        .custom1-file-input:hover:before {
+            border-color: 		#B22222;
+        }
+            .custom1-file-input:active:before {
+            background: white;
+        }
+        .file-blue:before {
+            content: 'Browse File';
+            background: -webkit-linear-gradient( -180deg, #99dff5, #02b0e6);
+            background: -o-linear-gradient( -180deg, #99dff5, #02b0e6);
+            background: -moz-linear-gradient( -180deg, #99dff5, #02b0e6);
+            background: linear-gradient( -180deg, #99dff5, #02b0e6);
+            border-color: #57cff4;
+            color: #FFF;
+            text-shadow: 1px 1px rgba(000,000,000,0.5);
+        }
+        .file-blue:hover:before {
+            border-color: #02b0e6;
+        }
+        .file-blue:active:before {
+            background: #02b0e6;
+        }
+
+
+    
+     
